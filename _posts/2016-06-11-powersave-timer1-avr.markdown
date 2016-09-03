@@ -7,8 +7,7 @@ categories: AVR
 This code sleeps atmega16a for 4s and wake up then do the job and sleep again.
 This helps to reduce the power consumption.
 
-code: [AVR power sleep][sleep-code-link]
-
+code:
 {% highlight C %}
 // CPU speed 1MHz @ Atmega16A,
 // gives 4s timeout for each timer1 overflow
