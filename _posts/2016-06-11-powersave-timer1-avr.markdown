@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "Powersave using timer1 in AVR"
 date:   2016-06-11 12:10:36 +0530
 categories: AVR
@@ -11,7 +11,7 @@ code:
 {% highlight C %}
 // CPU speed 1MHz @ Atmega16A,
 // gives 4s timeout for each timer1 overflow
-// This code shows how to go into deep sleep for 4s and wake up after 
+// This code shows how to go into deep sleep for 4s and wake up after
 // every 4s and do the job
 
 #include <avr/io.h>
