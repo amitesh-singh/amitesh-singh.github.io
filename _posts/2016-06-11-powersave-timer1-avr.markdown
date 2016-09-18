@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "Powersave using timer1 in AVR"
 date:   2016-06-11 12:10:36 +0530
 categories: AVR
