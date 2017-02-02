@@ -40,7 +40,8 @@ for the price of half KFC bucket or Pizza. I prefer this one.
 It took me 2 days to learn most of it. I have started with [Contextual Electronics][chris-link]
 and then move to other youtube videos and so on.
 Also the guidance by [Martin aka sabor][martin-blog-link] has been immense. He is an expert in
-Electronics and doing it for last 20 years or so. Check out his [panelized script][panel-link] which is really helpful.
+Electronics and doing it for last 20 years or so. Check out his [panelized blog][panel-link] &
+[panelize script][panelnew-link] which is really helpful.
 
 ### LionCircuits
 For PCB prototyping, LionCircuits charges `INR 36/sq.cm` for `three two Layer boards` and ships `under 14 days` which includes
@@ -78,3 +79,4 @@ I will do the review of the boards when I get it. Stay tuned for second part of 
 [martin-blog-link]: http://blog.borg.ch/
 [chris-link]: https://contextualelectronics.com/
 [panel-link]: http://blog.borg.ch/?p=12
+[panelnew-link]: http://projects.borg.ch/electronics/kicad/panelize.html
