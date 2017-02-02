@@ -2,7 +2,7 @@
 layout: post
 title:  "Creating Cheap PCBs In India for Makers: Designing and ordering, Part 1"
 date:   2016-02-02 11:08:36 +0530
-categories: PCB, Kicad, circuits, Make In India, LionCircuits, AVR, elecronics, soldering, perf board
+categories: PCB
 ---
 
 Most of the Indian elecronics hobbyists think that a PCB fabrication is expensive and
