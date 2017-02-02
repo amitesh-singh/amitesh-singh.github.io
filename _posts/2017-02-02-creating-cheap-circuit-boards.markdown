@@ -2,7 +2,7 @@
 layout: post
 title:  "Creating Cheap PCBs In India for Makers: Designing and ordering, Part 1"
 date:   2016-02-02 11:08:36 +0530
-categories: PCB
+categories: PCB, Kicad, circuits, Make In India, LionCircuits, AVR, elecronics, soldering, perf board
 ---
 
 Most of the Indian elecronics hobbyists think that a PCB fabrication is expensive and
@@ -40,14 +40,15 @@ for the price of half KFC bucket or Pizza. I prefer this one.
 It took me 2 days to learn most of it. I have started with [Contextual Electronics][chris-link]
 and then move to other youtube videos and so on.
 Also the guidance by [Martin aka sabor][martin-blog-link] has been immense. He is an expert in
-Electronics and doing it for last 20 years or so. Check out his [panelized script][panel-link] which is really helpful.
+Electronics and doing it for last 20 years or so. Check out his [panelize blog][panel-link] 
+[panelize script][panelnew-link] which is really helpful.
 
 ### LionCircuits
 For PCB prototyping, LionCircuits charges `INR 36/sq.cm` for `three two Layer boards` and ships `under 14 days` which includes
  `FREE Shipping` too. All made in India. :) 
 
  I have paid `240/- INR` for my first 2 layer board attiny13a breakout board of size 2x4 sq cm.
- You can find kicad project here: [attiny13a board kicad link][board-link]
+ You can find kicad project files here: [attiny13a board kicad][board-link]
 
 #### 3D VIEW
 ![Kicad pcb](/images/board-pcb.png)
@@ -78,3 +79,4 @@ I will do the review of the boards when I get it. Stay tuned for second part of 
 [martin-blog-link]: http://blog.borg.ch/
 [chris-link]: https://contextualelectronics.com/
 [panel-link]: http://blog.borg.ch/?p=12
+[panelnew-link]: http://projects.borg.ch/electronics/kicad/panelize.html
