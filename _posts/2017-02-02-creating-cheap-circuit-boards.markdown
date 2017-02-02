@@ -13,7 +13,7 @@ time consuming process. I thought that too. My requirements were
 
 I am glad that I found [LionCircuits][lioncircuits-link], an indian startup, based in banglore,
 which proudly makes PCBs in India for Makers and it meets my requirements. I am happy of the fact 
-this company supports makers community since most of us don't like soldering on perf board although I 
+that this company supports makers community since most of us don't like soldering on perf board although I 
 do good job on soldering perf board. Its just not worth the effort you put to make a circuit on perf board.
 
 Do you want proof of my perf board soldering skills? :)
