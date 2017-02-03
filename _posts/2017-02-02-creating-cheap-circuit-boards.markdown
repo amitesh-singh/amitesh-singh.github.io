@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Creating Cheap PCBs In India for Makers: Designing and ordering, Part 1"
-date:   2016-02-02 11:08:36 +0530
+date:   2017-02-02 11:08:36 +0530
 categories: PCB
 ---
 
