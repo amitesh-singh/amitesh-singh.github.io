@@ -49,6 +49,10 @@ avrdude done.  Thank you.
 I did upload a blinking LED sketch which worked well. Check the video below.
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Okay. Blinking LEDs works.<a href="https://twitter.com/LionCircuits">@LionCircuits</a> <a href="https://t.co/7ERhAsNk2g">pic.twitter.com/7ERhAsNk2g</a></p>&mdash; FAITH + 1 (@amitesh_singh) <a href="https://twitter.com/amitesh_singh/status/830352446878838784">February 11, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Added a switch and smd components. <a href="https://t.co/oVsOwm6FAh">pic.twitter.com/oVsOwm6FAh</a></p>&mdash; FAITH + 1 (@amitesh_singh) <a href="https://twitter.com/amitesh_singh/status/832321612485709824">February 16, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ### Reviews
 Overall I am pretty happy with the quality of PCBs and the turn out time from ordering PCB to actually
 get delivered to my door steps. I shall definetly order my PCBs from [LionCircuits][lioncircuits-link]
