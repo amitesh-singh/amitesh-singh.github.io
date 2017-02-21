@@ -5,17 +5,6 @@
   {% include head.html %}
 
   <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-
-    {% include footer.html %}
-
 <script type="text/javascript">
   ( function() {
     if (window.CHITIKA === undefined) { window.CHITIKA = { 'units' : [] }; };
@@ -27,6 +16,17 @@
 </script>
 
 <script type="text/javascript" src="//cdn.chitika.net/getads.js" async></script>
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+  
   </body>
 
 </html>
