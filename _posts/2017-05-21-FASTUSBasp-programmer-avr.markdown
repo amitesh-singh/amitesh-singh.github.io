@@ -185,8 +185,9 @@ There is a panelized PCB which consists of 3 boards in
 `100x100 sq. mm` area to save cost. You can download gerber files from
 [here][panelizedpcbs-link].
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://t.co/8CcZjQdlFD">https://t.co/8CcZjQdlFD</a><br>Added one more PCB. <a href="https://t.co/7Pehh8KH1r">pic.twitter.com/7Pehh8KH1r</a></p>&mdash; FAITH + 1 (@amitesh_singh) <a href="https://twitter.com/amitesh_singh/status/866188489456467969">May 21, 2017</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+![schematic](https://pbs.twimg.com/media/DA1ym-lUAAAWnmp.jpg)
+![PCB single](https://pbs.twimg.com/media/DAVQsKoUQAApPQ3.jpg)
+![panel PCB](https://pbs.twimg.com/media/DAVQtp-VYAEQJOM.jpg)
 
 I will be ordering panel PCBs soon.
 You can follow this project on [Hackaday][hackaday-link].
