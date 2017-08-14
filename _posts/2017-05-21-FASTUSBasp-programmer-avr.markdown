@@ -130,6 +130,24 @@ $ hexdump flash.bin
 Flash Write speed: `15 KBps`  
 Flash Read Speed: `52.5 KBps`  
 
+#### Using with attiny13a
+
+```shell
+$ avrdude -c usbasp-clone -p t13 -B 1
+
+avrdude: set SCK frequency to 750000 Hz
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.00s
+
+avrdude: Device signature = 0x1e9007 (probably t13)
+
+avrdude: safemode: Fuses OK (E:FF, H:FF, L:79)
+
+avrdude done.  Thank you.
+
+```
+
 #### USB debug information
 
 ```shell
