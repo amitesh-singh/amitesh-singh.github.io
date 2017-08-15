@@ -132,6 +132,9 @@ Flash Read Speed: `52.5 KBps`
 
 #### Using with attiny13a
 
+The default setting in attiny13a is to use 9.6 MHz internal oscillator.
+In this case, you need to decrease the CLK speed by providing -B option.
+ 
 ```shell
 $ avrdude -c usbasp-clone -p t13 -B 1
 
