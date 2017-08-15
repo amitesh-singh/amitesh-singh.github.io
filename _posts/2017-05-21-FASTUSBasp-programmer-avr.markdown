@@ -148,6 +148,18 @@ avrdude done.  Thank you.
 
 ```
 
+#### Bit clock speed
+
+FASTUSBasp starts out with a fast ISP clock frequency (default: 3 MHz), so the -B bitclock option might be required to achieve stable communication.
+
+##### Supported bitclock speed
+
+default (without -B): 3 MHz
+1.5 MHz  
+750 KHz  
+375 KHz  
+187.5 KHz  
+
 #### USB debug information
 
 ```shell
