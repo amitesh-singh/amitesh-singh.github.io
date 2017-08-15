@@ -232,6 +232,12 @@ You can follow this project on [Hackaday][hackaday-link].
 - support more `SCK` options.
 - support `TPI`.
 
+#### updates 
+
+##### 15th Aug 2017
+made the board on perfboard.
+![perfboard](https://pbs.twimg.com/media/DHQejIxVoAAy5xX.jpg)
+
 [stm32-link]: https://www.aliexpress.com/item/Arm-cortex-m3-stm32f103c8t6-stm32-core-board-development-board/1539984258.html
 [ali-link]: http://aliexpress.com
 [stlinkv2-link]: https://www.aliexpress.com/item/Free-shipping-Smart-Electronics-ST-LINK-Stlink-ST-Link-V2-Mini-STM8-STM32-Simulator-Download-Programmer/32756146997.html
@@ -241,3 +247,4 @@ You can follow this project on [Hackaday][hackaday-link].
 [panelizedpcbs-link]: https://github.com/amitesh-singh/FASTUSBasp/blob/master/kicad3/pan-gerber/panelizedv02.zip?raw=true
 [usbasp-link]: http://www.fischl.de/usbasp/
 [hackaday-link]: https://hackaday.io/project/21189-fastusbasp-programmer-for-avr
+[perfboard-link]: https://pbs.twimg.com/media/DHQejIxVoAAy5xX.jpg 
