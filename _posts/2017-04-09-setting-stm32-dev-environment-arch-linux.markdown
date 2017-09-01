@@ -124,19 +124,22 @@ int main( void )
 `svn` command can be used to download complete blink sample code.
 
 {% highlight C %}
-$ svn export https://github.com/amitesh-singh/amiduino/trunk/stm32/blink2
-A    blink2
-A    blink2/Makefile
-A    blink2/libopencm3-examples-rules.mk
-A    blink2/libopencm3-examples-stm32f1.mk
-A    blink2/skeleton.c
-A    blink2/skeleton.ld
-Exported revision 349.
+$ svn export https://github.com/amitesh-singh/amiduino/trunk/stm32/f1/blink
+A    blink
+A    blink/Makefile
+A    blink/hello.c
+A    blink/hello.ld
+A    blink/libopencm3-examples-rules.mk
+A    blink/libopencm3-examples-stm32f1.mk
+A    blink/notes.txt
+A    blink/stm32f103c8t6_board_schema.pdf
+Exported revision 367.
 
-$ cd blink2
+
+$ cd blink
 $ ls
-libopencm3-examples-rules.mk    Makefile    skeleton.ld
-libopencm3-examples-stm32f1.mk  skeleton.c
+hello.c   libopencm3-examples-rules.mk    Makefile   stm32f103c8t6_board_schema.pdf
+hello.ld  libopencm3-examples-stm32f1.mk  notes.txt
 
 {% endhighlight %}
 
