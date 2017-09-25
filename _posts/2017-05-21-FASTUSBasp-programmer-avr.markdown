@@ -14,12 +14,32 @@ features especially USB2.0 full-speed and CAN support. I have loved Atmel AVR  m
  real USB hardware to avoid connection issues which I had with USBasp before.
  The price of this board is just `1.81$` in case you buy it from [Aliexpress][stm32-link] hence it was a good alternative to USBasp.
  
-### How to compile and upload the firmware
 
-#### compile  
+#### PCBs
+![pcb1](https://pbs.twimg.com/media/DIJDorbU0AA_CXj.jpg)
+![pcb2](https://pbs.twimg.com/media/DIJDorIVYAAW44e.jpg)
+![pcb3](https://pbs.twimg.com/media/DIJDoq_U0AA3YuE.jpg)
+![pcb4](https://pbs.twimg.com/media/DIJDorFU0AUCKKl.jpg)
 
-Refer my old post on how to setup stm32 devlopment environment on Arch linux.
-[setting up stm32 development environment][stm32dev-link]
+#### Perf board
+![perfboard](https://pbs.twimg.com/media/DHQejIxVoAAy5xX.jpg)
+
+
+### how to upload firmware
+
+The pre-compiled binary is at `firmware/fastusbasp.bin`.
+
+```shell
+$ git clone https://github.com/amitesh-singh/FASTUSBasp
+$ st-flash write firmware/fastusbasp.bin 0x08000000
+```
+
+### how to compile from source and upload the firmware
+If you want to build fastusbasp firmware from source code, follow below guidelines.
+
+#### compile
+Refer my post on how to setup stm32 devlopment environment on Arch linux.
+http://amitesh-singh.github.io/stm32/2017/04/09/setting-stm32-dev-environment-arch-linux.html
 
 Make sure you have compiled `libopencm3` library.
 
@@ -29,13 +49,23 @@ $ vi config.cmake  # set the libopencm3 path here
 $ cmake .
 $ make
 ```
-
-#### Upload the firmware  
-
+#### Upload the firmware
+##### using STLINK
 connect `st-link` programmer to `blue-pill` and upload the firmware
 
 ```shell
 $ make fastusbasp-upload
+
+```
+
+##### using serial port
+Install `stm32flash` utility on linux.
+Connect any usb to uart converter device and connect PA9 to RXD and PA10 to TXD
+and connect GND.
+
+```shell
+$ make fastusbasp-serialupload
+
 ```
 
 ### How to program AVR MCUs
@@ -153,15 +183,15 @@ avrdude done.  Thank you.
 
 #### Bit clock speed
 
-FASTUSBasp starts out with a fast ISP clock frequency (default: 3 MHz), so the -B bitclock option might be required to achieve stable communication.
+`FASTUSBasp` starts out with a fast ISP clock frequency (default: 3 MHz), so the -B bitclock option might be required to achieve stable communication in case F_CPU is bit low < 12MHz
 
 ##### Supported bitclock speed
 
-default (without -B): 3 MHz
-1.5 MHz  
-750 KHz  
-375 KHz  
-187.5 KHz  
+default (without -B): 3 MHz  
+1.5 MHz    
+750 KHz    
+375 KHz    
+187.5 KHz    
 
 #### USB debug information
 
