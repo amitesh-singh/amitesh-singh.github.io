@@ -59,7 +59,11 @@ $ make fastusbasp-upload
 ```
 
 ##### using serial port
+
 Install `stm32flash` utility on linux.
+To program `stm32f103` via USART, you need to set `BOOT0` as `1`
+and leave `BOOT1` as `0`.
+
 Connect any usb to uart converter device and connect PA9 to RXD and PA10 to TXD
 and connect GND.
 
