@@ -26,6 +26,8 @@ You can put some solder on R10 solder pads and solder new resistor on R10.
 
 ![corrected pullup](https://pbs.twimg.com/media/DLrgVpIUMAAgKcn.jpg)
 
+Finally I got 1.5K resistors of size `0603` and fixed remaining four blue pills with it.
+
 
 [stm32-link]: https://www.aliexpress.com/item/STM32F103C8T6-ARM-STM32-Minimum-System-Development-Board-Module-For-Arduin0/32345958001.html
 [soft-hack]: http://amitesh-singh.github.io/stm32/2017/05/27/Overcoming-wrong-pullup-in-blue-pill.html
