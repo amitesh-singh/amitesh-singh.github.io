@@ -12,9 +12,9 @@ In this article, we shall discuss on how to design your own custom i2c slave dev
 
 ### Why STM32F103?
 
-- Very fast mcu speed 72 MHz.
-- Cheap price < `2$` & easily available. 
-- I2C speed 100Khz & 400Khz supported. 
+- 32 bit, fast mcu speed 72 MHz.
+- Cheap price < `2$` and easily available. 
+- I2C speed 100Khz and 400Khz supported. 
 - Interrupt & DMA support on i2c.
 - appoint cpu intensive work to i2c slave e.g. motor control, adc sampling etcs.
 
@@ -99,6 +99,7 @@ extern "C" void i2c1_ev_isr(void)
 
    sr1 = I2C_SR1(I2C1);
 
+   // Address matched (Slave)
    if (sr1 & I2C_SR1_ADDR)
      {
         reading = 0;
@@ -109,6 +110,7 @@ extern "C" void i2c1_ev_isr(void)
         sr2 = I2C_SR2(I2C1);
         (void) sr2;
      }
+   // Receive buffer not empty
    else if (sr1 & I2C_SR1_RxNE)
      {
         //ignore more than 3 bytes reading
@@ -118,6 +120,7 @@ extern "C" void i2c1_ev_isr(void)
         *read_p++ = i2c_get_data(I2C1);
         reading++;
      }
+   // Transmit buffer empty & Data byte transfer not finished
    else if ((sr1 & I2C_SR1_TxE) && !(sr1 & I2C_SR1_BTF))
      {
         //send data to master in MSB order
@@ -174,7 +177,7 @@ int main( void )
 }
 {% endhighlight %}
 
-I have put the code at [github][proj-link]. Refer `README.md` on how to compile code and upload to `stm32f103`.
+I have put the code at [github][proj-link]. Refer `README.md` for how to compile code and upload to `stm32f103`.
 
 ### In Action
 
@@ -221,8 +224,6 @@ read_slave(uint8_t reg)
 
 {% highlight C %}
 //slave recieves 0x3, 01(N2), 01(N1) (data MSB LSB order)
-write_slave(MYSLAVE_SET_REG, 0x0101);
-
 write_slave(MYSLAVE_SET_REG, 0x0101);
 time::delay(100);
 
