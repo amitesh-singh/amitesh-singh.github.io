@@ -17,3 +17,6 @@ github_username:  amitesh-singh
 
 # Build settings
 markdown: kramdown
+
+theme: jekyll-theme-midnight
+
