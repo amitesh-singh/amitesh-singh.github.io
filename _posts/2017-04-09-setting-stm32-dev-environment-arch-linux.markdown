@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[STM32]: Setting STM32F1XX development environment on Arch Linux - Part 1"
+title:  "[STM32]: Setting STM32 development environment on Arch Linux - Part 1"
 date:   2017-04-09 23:33:05 +0530
 categories: STM32
 ---

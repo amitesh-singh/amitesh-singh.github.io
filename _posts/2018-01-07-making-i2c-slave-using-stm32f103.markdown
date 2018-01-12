@@ -73,8 +73,10 @@ i2c_slave_init(uint8_t ownaddress)
    nvic_enable_irq(NVIC_I2C1_EV_IRQ);
 
    // configure i2c pins
-   gpio_set_mode(GPIOB, GPIO_MODE_OUTPUT_50_MHZ, GPIO_CNF_OUTPUT_ALTFN_OPENDRAIN, GPIO_I2C1_SDA); //PB7
-   gpio_set_mode(GPIOB, GPIO_MODE_OUTPUT_50_MHZ, GPIO_CNF_OUTPUT_ALTFN_OPENDRAIN, GPIO_I2C1_SCL); //PB6
+   gpio_set_mode(GPIOB, GPIO_MODE_OUTPUT_50_MHZ,
+                 GPIO_CNF_OUTPUT_ALTFN_OPENDRAIN, GPIO_I2C1_SDA); //PB7
+   gpio_set_mode(GPIOB, GPIO_MODE_OUTPUT_50_MHZ,
+                 GPIO_CNF_OUTPUT_ALTFN_OPENDRAIN, GPIO_I2C1_SCL); //PB6
 
    i2c_reset(I2C1);
    i2c_peripheral_disable(I2C1);
@@ -140,7 +142,7 @@ extern "C" void i2c1_ev_isr(void)
         else if (buf[0] == MYSLAVE_GET_MUL_RESULT)
           val = buf[1] * buf[2];
      }
-   //this event happens when slave is in transmit mode at the end of communication
+ //this event happens when slave is in transmit mode at the end of communication
    else if (sr1 & I2C_SR1_AF)
      {
         //(void) I2C_SR1(I2C1);
