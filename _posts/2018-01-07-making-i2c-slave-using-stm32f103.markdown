@@ -78,7 +78,6 @@ i2c_slave_init(uint8_t ownaddress)
    gpio_set_mode(GPIOB, GPIO_MODE_OUTPUT_50_MHZ,
                  GPIO_CNF_OUTPUT_ALTFN_OPENDRAIN, GPIO_I2C1_SCL); //PB6
 
-   i2c_reset(I2C1);
    i2c_peripheral_disable(I2C1);
 
    i2c_set_speed(I2C1, i2c_speed_sm_100k, I2C_CR2_FREQ_36MHZ);
@@ -158,8 +157,7 @@ our main function is given below.
 int main( void )
 {
    //set STM32 to 72 MHz
-   rcc_clock_setup_in_hse_8mhz_out_72mhz();
-
+   rcc_clock_setup_pll(&rcc_hse_configs[RCC_CLOCK_HSE8_72MHZ]);
    // Enable GPIOC clock
    rcc_periph_clock_enable(RCC_GPIOC);
    //Set GPIO13 (inbuild led connected) to 'output push-pull'
